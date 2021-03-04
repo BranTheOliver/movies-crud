@@ -18,7 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     TopoComponent,
-    RodapeComponent
+    RodapeComponent,
   ],
   imports: [
     BrowserModule,
