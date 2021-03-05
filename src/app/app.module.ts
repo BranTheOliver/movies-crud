@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { LayoutModule } from '@angular/cdk/layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
@@ -12,6 +13,7 @@ import { TopoComponent } from './shared/components/topo/topo.component';
 import { RodapeComponent } from './shared/components/rodape/rodape.component';
 import { MaterialModule } from './shared/components/material/material.module';
 import { AppRoutingModule } from './app-routing.module';
+import { AlertaComponent } from './shared/components/alerta/alerta.component';
 
 
 @NgModule({
@@ -19,6 +21,7 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     TopoComponent,
     RodapeComponent,
+    AlertaComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,8 +29,10 @@ import { AppRoutingModule } from './app-routing.module';
     LayoutModule,
     MaterialModule,
     AppRoutingModule,
+    HttpClientModule,
     FilmesModule
   ],
+  entryComponents: [AlertaComponent],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'pt' }],
   bootstrap: [AppComponent]
 })

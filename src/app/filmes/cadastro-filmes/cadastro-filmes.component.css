@@ -15,9 +15,6 @@
     background-color: #F5F5F5;
 }
 
-.btn{
-    width: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+button{
+    font-weight: bold;
 }
