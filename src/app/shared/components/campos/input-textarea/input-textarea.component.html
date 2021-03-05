@@ -11,11 +11,11 @@
         </mat-error>
     
         <mat-error *ngIf="validacao.hasErrorValidate(formControl, 'minlength')">
-            Campo precisa ter no minímo 2 caracteres.
+            Campo precisa ter no minímo {{validacao.lengthValidate(formControl, 'minlength')}} caracteres.
         </mat-error>
     
         <mat-error *ngIf="validacao.hasErrorValidate(formControl, 'maxlength')">
-            Campo pode ter no máximo 256 caracteres.
+            Campo pode ter no máximo {{validacao.lengthValidate(formControl, 'maxlength')}} caracteres.
         </mat-error>
     
     </mat-form-field>
