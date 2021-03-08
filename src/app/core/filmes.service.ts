@@ -18,10 +18,21 @@ export class FilmesService {
     return this.http.post<Filme>(url, filme);
   }
 
-  listar(page: number, limit: number): Observable<Filme[]>{
+  listar(page: number, limit: number, text: string, gender: string): Observable<Filme[]>{
     let httpParams = new HttpParams();
     httpParams = httpParams.set('_page', page.toString());
     httpParams = httpParams.set('_limit', limit.toString());
+    httpParams = httpParams.set('_sort', 'id');
+    httpParams = httpParams.set('_order', 'desc');
+
+    if (text){
+      httpParams = httpParams.set('q', text);
+    }
+
+    if (gender){
+      httpParams = httpParams.set('genero', gender);
+    }
+
     return this.http.get<Filme[]>(url, {params: httpParams});
   }
 }
