@@ -9,7 +9,8 @@
     margin-bottom: 10px;
 }
 .mat-card-image{
-    width: auto;
+    width: 182px;
+    height: 268px;
     margin: auto;
     display: block;
 }
