@@ -2,15 +2,32 @@
     display: flex;
     flex-wrap: wrap;
     width: calc(100% - 20px);
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px;
 }
 .home-content .home-card {
     margin-bottom: 10px;
 }
-@media screen and (min-width: 600px) {
+.mat-card-image{
+    width: auto;
+    margin: auto;
+    display: block;
+}
+.filtro-listagem{
+    width: calc(100% - 52px);
+}
+.width100 {
+    width: 100%;
+}
+
+@media screen and (min-width: 525px) {
     .home-content .home-card {
         width: calc(50% - 52px);
+   }
+}
+@media screen and (min-width: 800px) {
+    .home-content .home-card {
+        width: calc(33.333% - 52px);
    }
 }
 @media screen and (min-width: 1440px) {
