@@ -24,7 +24,7 @@ export class VisualizarFilmesComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.id = this.activatedRoute.snapshot.params['id']
+    this.id = this.activatedRoute.snapshot.params['id'];
     this.visualizar();
   }
 
@@ -48,6 +48,10 @@ export class VisualizarFilmesComponent implements OnInit {
         }
       }
     );
+  }
+
+  editar(): void {
+    this.router.navigateByUrl('/filmes/cadastro/' + this.id);
   }
 
   private visualizar(): void {
