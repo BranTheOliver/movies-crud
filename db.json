@@ -179,16 +179,6 @@
       "urlIMDb": "https://www.imdb.com/title/tt0805647/?ref_=fn_al_tt_1",
       "genero": "Aventura",
       "id": 18
-    },
-    {
-      "titulo": "teste",
-      "urlFoto": "",
-      "dtLancamento": "2021-03-08T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Ação",
-      "id": 19
     }
   ]
 }
